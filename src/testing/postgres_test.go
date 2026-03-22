@@ -7,7 +7,7 @@ import (
 )
 
 func TestPostgres(t *testing.T) {
-	t.Run("Conectar", func(t *testing.T) {
+	t.Run("Fluxo completo", func(t *testing.T) {
 		testarPostgres(t)
 	})
 }

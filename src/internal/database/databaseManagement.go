@@ -15,11 +15,11 @@ var DB *sql.DB
 func ConectarDataBase() {
 	var err error
 	dsn := "postgres://user:password@localhost:5432/shortener"
-	db, err := sql.Open("pgx", dsn)
+	DB, err = sql.Open("pgx", dsn)
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = db.Ping()
+	err = DB.Ping()
 	if err != nil {
 		log.Fatal("Não foi possível se conectar ao postgres:", err)
 	}

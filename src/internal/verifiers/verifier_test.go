@@ -1,5 +1,5 @@
 // Package test faz o teste dos arquivos principais.
-package test
+package verifiers_test
 
 import (
 	"testing"

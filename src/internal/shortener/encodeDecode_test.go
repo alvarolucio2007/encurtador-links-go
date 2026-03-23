@@ -1,4 +1,4 @@
-package test
+package shortener_test
 
 import (
 	"testing"

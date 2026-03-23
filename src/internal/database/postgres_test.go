@@ -1,4 +1,4 @@
-package test
+package database_test
 
 import (
 	"testing"
@@ -32,4 +32,5 @@ func testarPostgres(t *testing.T) {
 			t.Errorf("Diferença detectada, esperava %s e recebi %s", urlEsperada, urlRecuperada)
 		}
 	})
+	db.Exec()
 }

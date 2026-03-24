@@ -26,7 +26,7 @@ func ConectarRedis() {
 	fmt.Println("Redis conectado.")
 }
 
-func SalvarLinkRedis(codigo, url string) error {
+func AdicionarLinkRedis(codigo, url string) error {
 	return RedisClient.Set(Ctx, codigo, url, 0).Err()
 }
 

@@ -3,6 +3,7 @@ package database
 
 import (
 	"database/sql"
+	"errors"
 	"fmt"
 	"log"
 
@@ -42,15 +43,15 @@ func MigrarBanco() {
 	fmt.Println("✅ Tabelas prontas para uso.")
 }
 
-func CriarEntradaPostgres(url string) string {
+func CriarEntradaPostgres(url string) (string, error) {
 	var id uint64
 	query := "INSERT INTO links (url_original) VALUES ($1) RETURNING id"
 	err := DB.QueryRow(query, url).Scan(&id)
 	if err != nil {
-		log.Fatal("Erro ao inserir: ", err)
+		return "", errors.New("erro ao criar a entrada no postgres")
 	}
 	codigoCurto := shortener.Encode(id)
-	return codigoCurto
+	return codigoCurto, nil
 }
 
 func BuscarURLOriginal(codigoCurto string) (string, error) {

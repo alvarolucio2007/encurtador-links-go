@@ -3,7 +3,7 @@ package maintest
 import (
 	"testing"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/shortener"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/shortener"
 )
 
 func TestEncodeDecode(t *testing.T) {

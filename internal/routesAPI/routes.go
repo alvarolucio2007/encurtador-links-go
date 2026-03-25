@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/cache"
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/database"
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/verifiers"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/cache"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/database"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/verifiers"
 )
 
 func HandleRedirect(w http.ResponseWriter, r *http.Request) {

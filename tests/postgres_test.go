@@ -3,7 +3,7 @@ package maintest
 import (
 	"testing"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/database"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/database"
 )
 
 func TestPostgres(t *testing.T) {

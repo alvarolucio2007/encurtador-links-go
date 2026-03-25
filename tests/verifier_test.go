@@ -4,7 +4,7 @@ package maintest
 import (
 	"testing"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/verifiers"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/verifiers"
 )
 
 func TestVerifier(t *testing.T) {

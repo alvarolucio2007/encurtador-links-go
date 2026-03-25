@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/cache"
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/database"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/cache"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/database"
 )
 
 func TestMain(m *testing.M) {

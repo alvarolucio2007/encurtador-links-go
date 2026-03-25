@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/alvarolucio2007/encurtador-links-go/src/internal/shortener"
+	"github.com/alvarolucio2007/encurtador-links-go/internal/shortener"
 	_ "github.com/jackc/pgx/v5/stdlib"
 )
 

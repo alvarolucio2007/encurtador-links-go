@@ -18,8 +18,10 @@ func testarPostgres(t *testing.T) {
 
 	urlEsperada := "https://github.com/alvarolucio2007"
 	var codigo string
+
 	t.Run("Escrita: Deve salvar a URL e retornar um código menor", func(t *testing.T) {
-		codigo, err := database.CriarEntradaPostgres(urlEsperada)
+		var err error
+		codigo, err = database.CriarEntradaPostgres(urlEsperada)
 		if err != nil {
 			t.Errorf("Erro interno! %v", err)
 		}

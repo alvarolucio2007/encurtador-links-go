@@ -15,7 +15,7 @@ var DB *sql.DB
 
 func ConectarDataBase() {
 	var err error
-	dsn := "postgres://user:password@localhost:5432/shortener"
+	dsn := "host=pg_encurtador user=user password=password dbname=shortener sslmode=disable"
 	DB, err = sql.Open("pgx", dsn)
 	if err != nil {
 		log.Fatal(err)

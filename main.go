@@ -8,6 +8,7 @@ import (
 
 func main() {
 	database.ConectarDataBase()
+	database.MigrarBanco()
 	cache.ConectarRedis()
 	routes.SetupAPI()
 }
